@@ -16,7 +16,7 @@ class Auth < Sinatra::Base
   end
 
   # Catch all requests
-  get '*' do
+  get_or_post '*' do
     pass if request.host == settings.auth_domain
     # Authenticate user
     unless authenticated?
