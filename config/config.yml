@@ -1,11 +1,14 @@
 cookie:
   secret: "change_me"
-  domain: ".antoineroygobeil.com"
+  domain: ".domain.com"
 
-auth_domain: "auth.antoineroygobeil.com"
+auth_domain: "auth.domain.com"
 
-allowed_email:
-  - roygobeil.antoine@gmail.com
+allowed_email_domains:
+  - domain@domain.com
+
+allowed_email: 
+  - user@gmail.com
 
 routing:
-  graphite.antoineroygobeil.com: http://graphite.lxc
+  graphite.domain.com: http://graphite.lxc
